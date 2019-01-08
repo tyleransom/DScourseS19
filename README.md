@@ -1,6 +1,6 @@
 # ECON 5253: Data Science for Economists (Spring 2019) #
 
-[![Join the chat at https://gitter.im/DScourseS19/Lobby](https://badges.gitter.im/DScourseS19/Lobby.svg)](https://gitter.im/DScourseS19/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/DScourseS19/community](https://badges.gitter.im/DScourseS19/community.svg)](https://gitter.im/DScourseS19/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 |  | [Tyler Ransom](http://tyleransom.github.io) |
 |--------------|--------------------------------------------------------------|
