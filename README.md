@@ -6,7 +6,7 @@
 |--------------|--------------------------------------------------------------|
 | Email | [ransom@ou.edu](mailto:ransom@ou.edu) |
 | Office | 322 CCD1 |
-| Office Hours | M 9-10am, Th 12-1pm |
+| Office Hours | M 9:30-10:30am, Th 12-1pm |
 | GitHub | [tyleransom](https://github.com/tyleransom) |
 
 * **Meeting day/time**: T,Th 1:30-2:45pm, CCD1, Room 174
@@ -117,11 +117,11 @@ Final grades will be assigned according to the standard cutoffs (90%+ for an A, 
 | Feb 5  | T   | Sampling & storing Big Data ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/DatabaseMgmt/HadoopSpark.md)) | [PS 3](https://github.com/tyleransom/DScourseS19/blob/master/DatabaseMgmt/PS3.pdf) |
 | Feb 7  | Th  | Web scraping/APIs to gather data ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/WebData/README.md)) |  |
 | Feb 12 | T   |  Web scraping/APIs to gather data ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/WebData/README.md)) | [PS 4](https://github.com/tyleransom/DScourseS19/blob/master/DatabaseMgmt/PS4.pdf) |
-| Feb 14 | Th  | No class: career fair ([Julia notes](https://github.com/jmxpearson/duke-julia-ssri/blob/master/intro_slides.ipynb))                           |                                                                                                                                |
-| Feb 19 | T   | No class (snow day)                           | [PS 5](https://github.com/tyleransom/DScourseS19/blob/master/WebData/PS5.pdf) |
-| Feb 21 | Th  | No class (snow day)                           |                                                                                                                                |
-| Feb 26 | T   | Getting to know your data: descriptive statistics, cleaning, tips, tricks, transformations, visualization ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/Visualization/README.md); [HTML slides](https://github.com/tyleransom/DScourseS19/blob/master/Visualization/slides.html)) |   |
-| Feb 28 | Th  | Modeling continuous and discrete variables ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/README.md)) [HTML slides](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/slides.html)) |   |
+| Feb 14 | Th  | (Maybe) No class: career fair; otherwise Intro to Julia ([Julia notes](https://github.com/jmxpearson/duke-julia-ssri/blob/master/intro_slides.ipynb))                           |                                                                                                                                |
+| Feb 19 | T   | Getting to know your data: descriptive statistics, cleaning, tips, tricks, transformations, visualization ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/Visualization/README.md); [HTML slides](https://github.com/tyleransom/DScourseS19/blob/master/Visualization/slides.html)) | [PS 5](https://github.com/tyleransom/DScourseS19/blob/master/WebData/PS5.pdf) |
+| Feb 21 | Th  | More on visualization                         |                                                                                                                                |
+| Feb 26 | T   | Modeling continuous and discrete variables ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/README.md)) [HTML slides](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/slides.html)) |   |
+| Feb 28 | Th  | Linear Algebra Introduction / Review |   |
 | Mar 5  | T   | Introduction to optimization ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/OptimizationIntro.pdf)) | [PS 6](https://github.com/tyleransom/DScourseS19/blob/master/Visualization/PS6.pdf) |
 | Mar 7  | Th  | Writing and optimizing functions in R, Python, and Julia ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/OptimizationCodingBasics.md))   |    |
 | Mar 12 | T   | Writing and optimizing functions in R, Python, and Julia  ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/OptimizationCodingBasics.md))  | [PS 7](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/PS7.pdf) |
@@ -135,8 +135,7 @@ Final grades will be assigned according to the standard cutoffs (90%+ for an A, 
 | Apr 9  | T   | Unsupervised ML: Dimensionality reduction and reinforcement learning ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/MachineLearning/UnsupervisedLearning.md)) | [PS 10](https://github.com/tyleransom/DScourseS19/blob/master/MachineLearning/PS10.pdf) 
 | Apr 11 | Th  | Machine learning vs. econometrics ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/Structural/README.md)) | |
 | Apr 16 | T   | Structural modeling: static discrete choice ([Slides](https://github.com/tyleransom/DScourseS19/blob/master/Structural/discreteChoiceSlides.pdf)) | [PS 11](https://github.com/tyleransom/DScourseS19/blob/master/Structural/PS11.pdf) 
-| Apr 18 | Th  | Field Trip to Sonic HQ |                                                                                                                                |
-| Apr 23 | T   | Structural modeling: dynamic discrete choice ([Slides](https://github.com/tyleransom/DScourseS19/blob/master/Structural/discreteChoiceSlides.pdf)) | |
+| Apr 18 | Th  | Structural modeling: dynamic discrete choice ([Slides](https://github.com/tyleransom/DScourseS19/blob/master/Structural/discreteChoiceSlides.pdf)) | || Apr 23 | T   | Structural modeling: dynamic discrete choice ([Slides](https://github.com/tyleransom/DScourseS19/blob/master/Structural/discreteChoiceSlides.pdf)) | |
 | Apr 25 | Th  | Final Project presentations ([Rubric](https://github.com/tyleransom/DScourseS19/blob/master/FinalProject/README.md)) | |
 | Apr 30 | T   | Final Project presentations  ([Rubric](https://github.com/tyleransom/DScourseS19/blob/master/FinalProject/README.md)) | |
 | May 2  | Th  | Final Project presentations   ([Rubric](https://github.com/tyleransom/DScourseS19/blob/master/FinalProject/README.md)) | [PS 12](https://github.com/tyleransom/DScourseS19/blob/master/Structural/PS12.pdf) **(optional)**  |
