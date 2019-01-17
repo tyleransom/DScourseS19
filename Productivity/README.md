@@ -3,7 +3,7 @@
 
 TeX is a typesetting system.  It's quite helpful for scientific document as it simplifies the process of writing equations and compiling your bibliography.
 
-I recommend using [ShareLaTeX](https://sharelatex.com) for anyone who has not used LaTeX before. It's free, on the cloud, and will compile your documents in real time. Plus, it has a great built-in help site.
+I recommend using [Overleaf](https://overleaf.com) for anyone who has not used LaTeX before. It's free, on the cloud, and will compile your documents in real time. Plus, it has a great built-in help site.
 
 If you're interested in installing TeX on your laptop or computer, you can download the following software programs:
 * Unix/Linux: [TeX Live](https://www.tug.org/texlive/)
