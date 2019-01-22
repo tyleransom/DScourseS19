@@ -33,7 +33,7 @@ Below is a table summarizing the main differences between R, Python, and Julia:
 | Open source                        | Yes | Yes  | Yes |
 | Web scraping package?              | `rvest`   | `BeautifulSoup` | `Gumbo.jl`, `Cascadia.jl` |
 | Visualization library?             | `ggplot2` | `matplotlib` | `Plots.jl`|
-| Machine learning library?          | [sporadic](https://cran.r-project.org/web/views/MachineLearning.html) | scikit-learn | `Flux.jl`|
+| Machine learning library?          | mlr | scikit-learn | `Flux.jl`|
 | Biggest advantage                  | `tidyverse` | ubiquity | speed    |
 | Biggest disadvantage               | speed     | speed    | age      |
 
