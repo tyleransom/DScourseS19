@@ -102,7 +102,7 @@ where the following are functions:
 For example:
 ```python
 SELECT FUNCTION(var1 + var2) FROM datname;
-```python
+```
 would apply the `AVG` or `SUM` or `MIN` to the sum of `var1` and `var2`. More complex functions (like square root) are not supported in SQLite, so something like
 ```python
 SELECT AVG(SQRT(var1)) FROM datname;
