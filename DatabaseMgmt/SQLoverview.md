@@ -357,10 +357,13 @@ FROM criminals
 
 
 
-## Create Data
+## Create Data (again)
 
 
 ```python
+-- Drop previous table so we can create a new one with the same name
+DROP TABLE criminals;
+
 -- Create a table of criminals
 CREATE TABLE criminals (pid, name, age, sex, city, minor);
 INSERT INTO criminals VALUES (412, 'James Smith', 15, 'M', 'Santa Rosa', 1);
@@ -378,11 +381,7 @@ INSERT INTO criminals VALUES (901, 'Gordon Ado', 32, 'F', 'San Francisco', 0);
 
 
 ```python
---  Select all
-SELECT *
-
--- From the criminals table
-FROM criminals
+SELECT * FROM criminals;
 ```
 
 
@@ -440,10 +439,7 @@ VALUES (512, 'Bill Byson', 21, 'M', 'Petaluma', 0);
 
 ```python
 --  Select all
-SELECT *
-
--- From the criminals table
-FROM criminals
+SELECT * FROM criminals;
 ```
 
 
@@ -491,6 +487,9 @@ FROM criminals
 
 
 ```python
+-- Drop the previous table so we can create another one with the same name
+DROP TABLE criminals;
+
 -- Create a table of criminals
 CREATE TABLE criminals (pid, name, age, sex, city, minor);
 INSERT INTO criminals VALUES (412, 'James Smith', 15, 'M', 'Santa Rosa', 1);
@@ -514,11 +513,11 @@ INSERT INTO criminals VALUES (411, 'Bob Iton', NULL, 'M', 'San Francisco', 0);
 
 
 ```python
---  Select all names from the table 'c'
+--  Select all rows of the "names" column from the table 'c'
 SELECT c.name
 
 -- From the criminals table, now called c
-FROM criminals AS c
+FROM criminals AS c;
 ```
 
 
@@ -561,6 +560,9 @@ FROM criminals AS c
 
 
 ```python
+-- Drop the previous table so we can create another one with the same name
+DROP TABLE criminals;
+
 -- Create a table of criminals with pid being a primary key integer that is auto-incremented
 CREATE TABLE criminals (pid INTEGER PRIMARY KEY AUTOINCREMENT,
                         name, 
@@ -584,11 +586,7 @@ INSERT INTO criminals VALUES (NULL, 'James Smith', 15, 'M', 'Santa Rosa', 1);
 
 
 ```python
--- Select everything
-SELECT *
-
--- From the table 'criminals'
-FROM criminals
+SELECT * FROM criminals
 ```
 
 
@@ -639,11 +637,7 @@ INSERT INTO criminals VALUES (NULL, 'Bob Iton', NULL, 'M', 'San Francisco', 0);
 
 
 ```python
--- Select everything
-SELECT *
-
--- From the table 'criminals'
-FROM criminals
+SELECT * FROM criminals
 ```
 
 
@@ -727,26 +721,6 @@ FROM criminals
 
 
 
-## Create Data
-
-
-```python
--- Create a table of criminals
-CREATE TABLE criminals (pid, name, age, sex, city, minor);
-INSERT INTO criminals VALUES (412, 'James Smith', 15, 'M', 'Santa Rosa', 1);
-INSERT INTO criminals VALUES (234, NULL, 22, 'M', 'Santa Rosa', 0);
-INSERT INTO criminals VALUES (632, NULL, 23, 'F', 'San Francisco', 0);
-INSERT INTO criminals VALUES (901, 'Gordon Ado', 32, 'F', 'San Francisco', 0);
-INSERT INTO criminals VALUES (512, 'Bill Byson', 21, 'M', 'Petaluma', 0);
-```
-
-
-
-
-
-
-
-
 ## Write Some SQL Code With Single And Multiline Comments
 
 
@@ -814,11 +788,7 @@ INSERT INTO criminals_1 VALUES (411, 'Bob Iton', NULL, 'M', 'San Francisco', 0);
 
 
 ```python
--- Select all
-SELECT *
-
--- From the table 'criminals_1'
-FROM criminals_1
+SELECT * FROM criminals_1;
 ```
 
 
@@ -941,11 +911,7 @@ FROM criminals_1;
 
 
 ```python
--- Select everything
-SELECT *
-
--- From the previously empty table
-FROM criminals_2
+SELECT * FROM criminals_2;
 ```
 
 
@@ -1741,7 +1707,7 @@ SQLite (the version of SQL used in this tutorial) does not allow you to drop a c
 
 
 ```python
--- Create a table called 'criminals_tamps' with the columns we want to not drop
+-- Create a table called 'criminals_temp' with the columns we want to not drop
 CREATE TABLE criminals_temp(pid, name, sex);
 
 -- Copy the data from the columns we want to keep to the new table
