@@ -3,7 +3,7 @@ This module of the course provides tools to gather data from the web through the
 
 ## Notebooks we worked through in class
 
-* [R Web scraping Tutorial](https://github.com/tyleransom/DScourseS18/blob/master/WebData/TrumpLies.Rmd) (same thing, but in [Python](https://github.com/justmarkham/trump-lies/blob/master/trump_lies.ipynb); same thing, but in [Julia](https://github.com/tyleransom/DScourseS18/blob/master/WebData/WebScrapingInJulia.ipynb))
+* [R Web scraping Tutorial](https://github.com/tyleransom/DScourseS18/blob/master/WebData/TrumpLies.Rmd) ([blog post version of Rmd file](https://towardsdatascience.com/web-scraping-tutorial-in-r-5e71fd107f32); same thing, but in [Python](https://github.com/justmarkham/trump-lies/blob/master/trump_lies.ipynb); same thing, but in [Julia](https://github.com/tyleransom/DScourseS18/blob/master/WebData/WebScrapingInJulia.ipynb))
 * [Python Web scraping Tutorial (from Jason DeBacker)](https://github.com/tyleransom/DScourseS18/blob/master/WebData/WebScraping.ipynb)
 * [Using APIs (from Jason DeBacker)](https://github.com/tyleransom/DScourseS18/blob/master/WebData/APIs.ipynb)
 * [Using `twitteR` to analyze Trump's tweets](http://varianceexplained.org/r/trump-tweets/)
