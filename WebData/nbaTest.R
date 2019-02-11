@@ -13,5 +13,5 @@ thunder_contracts <- get_nba_team_salaries(team_name = "Oklahoma City Thunder", 
 print(thunder_contracts)
 thunder_contracts$value <- thunder_contracts$value/1e6
 print(thunder_contracts$value)
-current_thunder <- filter(thunder_contracts,slugSeason=="2017-18") %>% select(slugSeason,nameTeam, namePlayer, isFinalSeason, value) 
+current_thunder <- filter(thunder_contracts,slugSeason=="2018-19") %>% select(slugSeason,nameTeam, namePlayer, isFinalSeason, value) 
 print(current_thunder)
