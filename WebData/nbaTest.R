@@ -3,7 +3,7 @@ library(tibble)
 library(dplyr)
 
 # Collect coaching staff info
-coaches <- get_coaching_staffs()
+coaches <- coaching_staffs()
 print(coaches)
 
 print(filter(coaches, nameCollegeCoach == "Duke"))
