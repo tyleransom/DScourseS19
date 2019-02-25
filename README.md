@@ -121,7 +121,7 @@ Final grades will be assigned according to the standard cutoffs (90%+ for an A, 
 | Feb 19 | T   | "Snow" day (class canceled) |  |
 | Feb 21 | Th  | Getting to know your data: descriptive statistics, cleaning, tips, tricks, transformations, visualization ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/Visualization/README.md); [HTML slides](https://github.com/tyleransom/DScourseS19/blob/master/Visualization/slides.html)) | [PS 5](https://github.com/tyleransom/DScourseS19/blob/master/WebData/PS5.pdf) |
 | Feb 26 | T   | Modeling continuous and discrete variables ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/README.md)) [HTML slides](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/slides.html)) |   |
-| Feb 28 | Th  | Linear Algebra Introduction / Review |   |
+| Feb 28 | Th  | Linear Algebra Introduction / Review ([Handout](https://minireference.com/static/tutorials/linear_algebra_in_4_pages.pdf)) |   |
 | Mar 5  | T   | Introduction to optimization ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/OptimizationIntro.pdf)) | [PS 6](https://github.com/tyleransom/DScourseS19/blob/master/Visualization/PS6.pdf) |
 | Mar 7  | Th  | Writing and optimizing functions in R, Python, and Julia ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/OptimizationCodingBasics.md))   |    |
 | Mar 12 | T   | Writing and optimizing functions in R, Python, and Julia  ([Notes](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/OptimizationCodingBasics.md))  | [PS 7](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/PS7.pdf) |
