@@ -58,13 +58,13 @@
 \usepackage{breakurl}    % Allows urls to wrap, including hyperref
 
 \pagestyle{head}
-\firstpageheader{\textbf{\class\ - \term}}{\textbf{\examnum}}{\textbf{Due: Mar. 13\\ beginning of class}}
-\runningheader{\textbf{\class\ - \term}}{\textbf{\examnum}}{\textbf{Due: Mar. 13\\ beginning of class}}
+\firstpageheader{\textbf{\class\ - \term}}{\textbf{\examnum}}{\textbf{Due: Mar. 12\\ beginning of class}}
+\runningheader{\textbf{\class\ - \term}}{\textbf{\examnum}}{\textbf{Due: Mar. 12\\ beginning of class}}
 \runningheadrule
 
-\newcommand{\class}{Econ 5970}
-\newcommand{\term}{Spring 2018}
-\newcommand{\examdate}{Due: March 13, 2018}
+\newcommand{\class}{Econ 5253}
+\newcommand{\term}{Spring 2019}
+\newcommand{\examdate}{Due: March 12, 2019}
 % \newcommand{\timelimit}{30 Minutes}
 
 \noprintanswers                         % Uncomment for no solutions version
@@ -75,20 +75,20 @@
 \begin{document}
 This problem set will give you practice with imputing missing data and automating the process of creating reports of summary tables and model estimates.
 
-As with the previous problem sets, you will submit this problem set by pushing the document to \emph{your} (private) fork of the class repository. You will put this and all other problem sets in the path \texttt{/DScourseS18/ProblemSets/PS7/} and name the file \texttt{PS7\_LastName.*}. Your OSCER home directory and GitHub repository should be perfectly in sync, such that I should be able to find these materials by looking in either place. Your directory should contain at least three files:
+As with the previous problem sets, you will submit this problem set by pushing the document to \emph{your} (private) fork of the class repository. You will put this and all other problem sets in the path \texttt{/DScourseS19/ProblemSets/PS7/} and name the file \texttt{PS7\_LastName.*}. Your OSCER home directory and GitHub repository should be perfectly in sync, such that I should be able to find these materials by looking in either place. Your directory should contain at least three files:
 \begin{itemize}
     \item \texttt{PS7\_LastName.R} (you can also do this in Python or Julia if you prefer)
     \item \texttt{PS7\_LastName.tex}
     \item \texttt{PS7\_LastName.pdf}
 \end{itemize}
 \begin{questions}
-\question Type \texttt{git pull origin master} from your OSCER \texttt{DScourseS18} folder to make sure your OSCER folder is synchronized with your GitHub repository. 
+\question Type \texttt{git pull origin master} from your OSCER \texttt{DScourseS19} folder to make sure your OSCER folder is synchronized with your GitHub repository. 
 
 \question Synchronize your fork with the class repository by doing a \texttt{git fetch upstream} and then merging the resulting branch. 
 
 \question Install the following R packages (if you don't already have them installed):
 \begin{itemize}
-    \item \texttt{MixedDataImpute}
+    %\item \texttt{MixedDataImpute}
     \item \texttt{mice}
     \item \texttt{stargazer}
 \end{itemize}
@@ -119,10 +119,10 @@ Our coefficient of interest is $\beta_{1}$ which can be interpreted as the retur
     \item perform mean imputation to fill in missing log wages
     \item impute missing log wages as their predicted values from the complete cases regression above (i.e. this would be consistent with the ``Missing at Random'' assumption)
     \item use the \texttt{mice} package to perform a multiple imputation regression model (follow the steps \href{https://rpubs.com/mhanauer/mice}{here})
-    \item use the \texttt{MixedDataImpute} package to impute missing log wages
+    %\item use the \texttt{MixedDataImpute} package to impute missing log wages
 \end{itemize}
 
-Once you have finished all of this, use \texttt{stargazer} to create one regression table which has the estimates of the first three regression models. (\texttt{mice} and \texttt{MixedDataImpute} do not produce output that is compatible with \texttt{stargazer}.) Include this table in your .tex writeup. 
+Once you have finished all of this, use \texttt{stargazer} to create one regression table which has the estimates of the first three regression models. (\texttt{mice} does not produce output that is compatible with \texttt{stargazer}.) Include this table in your .tex writeup. 
 
 The true value of $\hat{\beta}_{1}=0.093$. Comment on the differences of $\hat{\beta}_{1}$ across the models. What patterns do you see? What can you conclude about the veracity of the various imputation methods? Also discuss what the estimates of $\hat{\beta}_{1}$ are for the last two methods.
 
@@ -130,7 +130,7 @@ The true value of $\hat{\beta}_{1}=0.093$. Comment on the differences of $\hat{\
 
 \question Compile your .tex file, download the PDF and .tex file, and transfer it to your cloned repository on OSCER using your SFTP client of choice (or via \texttt{scp} from your laptop terminal). You may also copy and paste your .tex file from your browser directly into your terminal via \texttt{nano} if you prefer, but you will need to use SFTP or \texttt{scp} to transer the PDF.\footnote{If you want to try out something different, you can compile your .tex file on OSCER by typing \texttt{pdflatex myfile.tex} at the command prompt of the appropriate directory. This will create the PDF directly on OSCER, removing the requirement to use SFTP or \texttt{scp} to move the file over.}
 
-\question You should turn in the following files: .tex, .pdf, and any additional scripts (e.g. .R, .py, or .jl) required to reproduce your work.  Make sure that these files each have the correct naming convention (see top of this problem set for directions) and are located in the correct directory (i.e. \texttt{\textasciitilde/DScourseS18/ProblemSets/PS7}).
+\question You should turn in the following files: .tex, .pdf, and any additional scripts (e.g. .R, .py, or .jl) required to reproduce your work.  Make sure that these files each have the correct naming convention (see top of this problem set for directions) and are located in the correct directory (i.e. \texttt{\textasciitilde/DScourseS19/ProblemSets/PS7}).
 
 \question Synchronize your local git repository (in your OSCER home directory) with your GitHub fork by using the commands in Problem Set 2 (i.e. \texttt{git add}, \texttt{git commit -m ''message''}, and \texttt{git push origin master}). Once you have done this, issue a \texttt{git pull} from the location of your other local git repository (e.g. on your personal computer). Verify that the PS7 files appear in the appropriate place in your other local repository.
 
