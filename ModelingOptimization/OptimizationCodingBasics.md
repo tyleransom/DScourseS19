@@ -132,6 +132,7 @@ for(i in 1:iter){
 # print result and plot all xs for every iteration
 print(paste("The minimum of f(x) is ", x, sep = ""))
 ```
+Want to do it in Julia? see [here](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/simpleGD.jl)
 
 ## How to write a function in R 
 How do you write a function in R? The function has four distinct elements:
