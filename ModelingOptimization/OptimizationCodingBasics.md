@@ -219,6 +219,7 @@ opts <- list("algorithm"="NLOPT_LD_LBFGS","xtol_rel"=1.0e-8)
 res <- nloptr( x0=x0,eval_f=eval_f,eval_grad_f=eval_grad_f,opts=opts)
 print(res)
 ```
+Want to do it in Julia? see [here](https://github.com/tyleransom/DScourseS19/blob/master/ModelingOptimization/LBFGS.jl)
 
 ## Comparison with previous result
 As you can see, we got the same result using this method as we did with our simple gradient descent.
