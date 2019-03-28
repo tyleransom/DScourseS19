@@ -258,11 +258,15 @@ names(housing) <- c("crim","zn","indus","chas","nox","rm","age","dis","rad","tax
 ## OLS
 
 ```r
+library(mlr)
+library(tidyverse)
+library(magrittr)
+
 # Add some other features
-housing$lmedv <- log(housing$medv)
-housing$medv <- NULL
-housing$dis2 <- housing$dis^2
-housing$chasNOX <- housing$crim * housing$nox
+housing %<>% mutate(lmedv = log(medv),
+                    medv = NULL,
+                    dis2 = dis^2,
+                    crimNOX = crim*nox)
 
 # Break up the data:
 n <- nrow(housing)
@@ -286,9 +290,30 @@ sampleResults <- resample(learner = predAlg, task = theTask, resampling = resamp
 
 # Mean RMSE across the 6 folds
 print(sampleResults$aggr)
+
+# Train the model (i.e. estimate OLS)
+finalModel <- train(learner = predAlg, task = theTask)
+
+# Predict in test set
+prediction <- predict(finalModel, newdata = housing.test)
+
+# Print out-of-sample RMSE
+get.rmse <- function(y1,y2){
+   return(sqrt(mean((y1-y2)^2)))
+}
+print(get.rmse(prediction$data$truth,prediction$data$response))
+
+# Trained parameter estimates
+getLearnerModel(finalModel)$coefficients
+
+# OLS parameter estimates
+summary(lm(lmedv ~ crim + zn + indus + chas + 
+                   nox + rm + age + dis + rad + 
+                   tax + ptratio + b + lstat + 
+                   dis2 + crimNOX, data=housing.train))
 ```
 
-Now, there's not much to do here, since there is no regularization in OLS. But you can see that there is quite a bit of variation in the RMSE based on which sample you use.
+Now, there's not much to do here, since there is no regularization in OLS. But you can see that there is quite a bit of variation in the RMSE based on which sample you use. Also, the trained parameter estimates match what OLS gives us.
 
 ## LASSO
 Now let's repeat but instead use the LASSO estimator from the `glmnet` package
@@ -333,6 +358,10 @@ finalModel <- train(learner = predAlg, task = theTask)
 prediction <- predict(finalModel, newdata = housing.test)
 
 print(head(prediction$data))
+print(get.rmse(prediction$data$truth,prediction$data$response))
+
+# Trained parameter estimates
+getLearnerModel(finalModel)$beta
 ```
 
 ## Ridge regression
@@ -362,6 +391,12 @@ finalModel <- train(learner = predAlg, task = theTask)
 
 # Predict in test set!
 prediction <- predict(finalModel, newdata = housing.test)
+
+# Print RMSE
+print(get.rmse(prediction$data$truth,prediction$data$response))
+
+# Trained parameter estimates
+getLearnerModel(finalModel)$beta
 ```
 This showcases the nicest feature of the `mlr` package: we are still using the same algorithm, data, and cross-validation scheme, so we don't need to tell it those parameters again. We do, however, need to tell it to tune to the new parameter space (in this case, ridge instead of LASSO).
 
