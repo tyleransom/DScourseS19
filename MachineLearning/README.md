@@ -611,6 +611,11 @@ The regularization parameters that needs to be cross-validated in SVM models are
 | Analogizers    | Nearest neighbor        | `kknn`    | `k` (integer) | `classif.kknn` |
 |                | Support Vector Machine  | `e1071`   | `cost` (numeric ranging from 2^-10 to 2^10); `gamma` (same as `cost`) | `classif.svm` |
 
+## Ensemble models
+As mentioned previously, it can sometimes be optimal to combine across two of the tribes.
+
+An example of this is the following [YouTube video](https://youtu.be/Aut32pR5PQA) which depicts cars learning to drive on track. The approach combines a neural network with a genetic algorithm.
+
 ## Recommender systems
 One commonly used application for prediction algorithms is recommender systems. For example, Netflix or YouTube want to "recommend" to you what to watch next, based on what you've shown interest in previously. The target variable here is "how much the user will like offering W" and the features are things like "list of shows the user has watched previously" or "list of shows user showed interest in previously" (e.g. by reading the overview of a video).
 
